@@ -103,6 +103,10 @@
                 }
             });
 
+            onUnmounted(() => {
+                destroy();
+            });
+
             return {
                 captcha,
                 widget,
